@@ -1,4 +1,4 @@
- -- leader keybind (space)
+-- leader keybind (space)
 vim.g.mapleader = " "
 
 -- lazy nvim insertion
@@ -16,6 +16,5 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- load lazy (moved to plugins.lua)
-local opts = {}
 require("lazy").setup("plugins")
 require("vim-options")

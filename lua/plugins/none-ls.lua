@@ -16,7 +16,6 @@ return {
 
         null_ls.builtins.diagnostics.rubocop,
         require("none-ls.diagnostics.eslint_d"),
-
       },
     })
 

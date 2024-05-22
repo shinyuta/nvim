@@ -3,6 +3,6 @@ return {
   name = "rose-pine",
   config = function()
     -- theme
-    vim.cmd.colorscheme "rose-pine"
-  end
+    vim.cmd.colorscheme("rose-pine")
+  end,
 }
