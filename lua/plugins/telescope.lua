@@ -1,14 +1,13 @@
 return {
   {
     "nvim-telescope/telescope.nvim",
+    lazy = false,
     tag = "0.1.6",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
+      local builtin = require("telescope.builtin")
+
       local TelescopePrompt = {
-        TelescopePromptBorder = {
-          fg = "#A7C080",
-          bg = "none",
-        },
         TelescopePromptTitle = {
           fg = "#A7C080",
           bg = "none",
@@ -21,16 +20,17 @@ return {
           fg = "#A7C080",
           bg = "none",
         },
-        TelescopeBorder = {
+        TelescopePromptBorder = {
           fg = "#A7C080",
           bg = "none",
         },
-        TelescopeNormal = {
+        TelescopePreviewBorder = {
           fg = "#A7C080",
           bg = "none",
         },
-        TelescopeSelectionCaret = {
+        TelescopeResultsBorder = {
           fg = "#A7C080",
+          bg = "none",
         },
       }
       for hl, col in pairs(TelescopePrompt) do
@@ -38,13 +38,13 @@ return {
       end
 
       -- telescope + keymap
-      local builtin = require("telescope.builtin")
       vim.keymap.set("n", "<C-p>", builtin.find_files, {})
       vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
     end,
   },
   {
     "nvim-telescope/telescope-ui-select.nvim",
+    lazy = false,
     config = function()
       require("telescope").setup({
         extensions = {
