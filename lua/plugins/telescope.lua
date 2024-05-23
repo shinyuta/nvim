@@ -9,27 +9,27 @@ return {
 
       local TelescopePrompt = {
         TelescopePromptTitle = {
-          fg = "#A7C080",
+          fg = "#A688CA",
           bg = "none",
         },
         TelescopePreviewTitle = {
-          fg = "#A7C080",
+          fg = "#A688CA",
           bg = "none",
         },
         TelescopeResultsTitle = {
-          fg = "#A7C080",
+          fg = "#A688CA",
           bg = "none",
         },
         TelescopePromptBorder = {
-          fg = "#A7C080",
+          fg = "#A688CA",
           bg = "none",
         },
         TelescopePreviewBorder = {
-          fg = "#A7C080",
+          fg = "#A688CA",
           bg = "none",
         },
         TelescopeResultsBorder = {
-          fg = "#A7C080",
+          fg = "#A688CA",
           bg = "none",
         },
       }
