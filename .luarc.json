@@ -1,6 +1,7 @@
 {
     "diagnostics.globals": [
         "vim",
-        "theme_colors"
+        "theme_colors",
+        "custom_Transparent"
     ]
 }
