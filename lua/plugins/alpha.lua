@@ -64,15 +64,20 @@ return {
           local greeting
 
           if current_hour < 5 then
-            greeting = "    Good night!"
+            greeting = "    Good night!\n It is currently " .. os.date("%H:%M")
+
           elseif current_hour < 12 then
-            greeting = "  󰼰 Good morning!"
+            greeting = "  󰼰 Good morning!\n It is currently " .. os.date("%H:%M")
+
           elseif current_hour < 17 then
-            greeting = "    Good afternoon!"
+            greeting = "    Good afternoon!\n It is currently " .. os.date("%H:%M")
+
           elseif current_hour < 20 then
-            greeting = "  󰖝  Good evening!"
+            greeting = "  󰖝  Good evening!\n It is currently " .. os.date("%H:%M")
+
           else
-            greeting = "  󰖔  Good night!"
+            greeting = "    󰖔  Good night!\n It is currently " .. os.date("%H:%M")
+
           end
 
           dashboard.section.footer.val = greeting
