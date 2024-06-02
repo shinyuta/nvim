@@ -3,6 +3,19 @@ vim.g.mapleader = " "
 
 vim.opt.termguicolors = true
 
+vim.scriptencoding = "utf-8"
+vim.opt.encoding = "utf-8"
+vim.opt.fileencoding = "utf-8"
+
+vim.opt.title = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+
+vim.opt.scrolloff = 10
+vim.opt.ignorecase = true
+vim.opt.smarttab = true
+vim.opt.backspace = {"start", "eol", "indent"}
+
 -- lazy nvim insertion
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
