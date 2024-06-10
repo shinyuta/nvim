@@ -16,6 +16,10 @@ vim.opt.ignorecase = true
 vim.opt.smarttab = true
 vim.opt.backspace = {"start", "eol", "indent"}
 
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.writebackup = false
+
 -- lazy nvim insertion
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
