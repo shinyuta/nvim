@@ -39,4 +39,5 @@ vim.keymap.set("n", "<C-o>", ":Telescope noice<CR>")
 -- bufferline close
 vim.keymap.set("n", "<leader>q", ":Bdelete<CR>")
 
+--lsp options in none-ls
 
