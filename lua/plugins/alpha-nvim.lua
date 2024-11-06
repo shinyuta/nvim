@@ -18,10 +18,10 @@ return {
 
       -- stylua: ignore
       dashboard.section.buttons.val = {
-        dashboard.button("l", "󰍂" .. " login", [[<cmd> lua require("persistence").load() <cr>]]),
-        dashboard.button("r", "" .. " Recent", "<cmd> Telescope oldfiles <cr>"),
-        dashboard.button("u", "󰿅" .. " Update", "<cmd> Lazy update <cr>"),
-        dashboard.button("q", "󰍃" .. " logout", "<cmd> qa <cr>")
+        dashboard.button("l", "󰍂" .. " ログイン", [[<cmd> lua require("persistence").load() <cr>]]),
+        dashboard.button("r", "" .. " サーチ", "<cmd> Telescope oldfiles <cr>"),
+        dashboard.button("u", "󰿅" .. " アップデート", "<cmd> Lazy update <cr>"),
+        dashboard.button("q", "󰍃" .. " ログアウト", "<cmd> qa <cr>")
       }
 
       for _, button in ipairs(dashboard.section.buttons.val) do
@@ -64,19 +64,19 @@ return {
           local greeting
 
           if current_hour < 5 then
-            greeting = "      Good night!\n It is currently " .. os.date("%H:%M")
+            greeting = "  こんばんは!\n  今は " .. os.date("%H:%M")
 
           elseif current_hour < 12 then
-            greeting = "    󰼰 Good morning!\n It is currently " .. os.date("%H:%M")
+            greeting = " 󰼰  おはよう!\n  今は " .. os.date("%H:%M")
 
           elseif current_hour < 17 then
-            greeting = "     Good afternoon!\n It is currently " .. os.date("%H:%M")
+            greeting = "  こんにちは!\n  今は " .. os.date("%H:%M")
 
           elseif current_hour < 20 then
-            greeting = "   󰖝  Good evening!\n It is currently " .. os.date("%H:%M")
+            greeting = "󰖝  こんばんは!\n  今は " .. os.date("%H:%M")
 
           else
-            greeting = "    󰖔  Good night!\n It is currently " .. os.date("%H:%M")
+            greeting = "󰖔  こんばんは!\n  今は " .. os.date("%H:%M")
 
           end
 

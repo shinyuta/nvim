@@ -8,8 +8,6 @@ return {
 		-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 	},
 	config = function()
-		vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle left<CR>", {})
-
 		-- Deprecated as of 0.10 read --> https://github.com/neovim/neovim/pull/26193
 		-- vim.fn.sign_define("DiagnosticSignError", {text = " ", texthl = "DiagnosticSignError"})
 		-- vim.fn.sign_define("DiagnosticSignWarn", {text = " ", texthl = "DiagnosticSignWarn"})
