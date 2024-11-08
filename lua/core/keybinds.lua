@@ -13,7 +13,7 @@ vim.keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width
 vim.keymap.set("n", "<leader>sx", ":close<CR>") -- close split window
 vim.keymap.set("n", "<leader>sj", "<C-w>-") -- make split window height shorter
 vim.keymap.set("n", "<leader>sk", "<C-w>+") -- make split windows height taller
-vim.keymap.set("n", "<leader>sl", "<C-w>>5") -- make split windows width bigger 
+vim.keymap.set("n", "<leader>sl", "<C-w>>5") -- make split windows width bigger
 vim.keymap.set("n", "<leader>sh", "<C-w><5") -- make split windows width smaller
 
 -- Yank into system clipboard
@@ -31,10 +31,10 @@ vim.keymap.set("n", "<leader>P", '"+P') -- paste before cursor
 vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle left<CR>", {})
 
 -- windows/linux
--- vim.keymap.set("n", "<A-j>", ":m .+1<CR>==") -- move line up(n)
--- vim.keymap.set("n", "<A-k>", ":m .-2<CR>==") -- move line down(n)
--- vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv") -- move line up(v)
--- vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv") -- move line down(v)
+vim.keymap.set("n", "<Esc-j>", ":m .+1<CR>==") -- move line up(n)
+vim.keymap.set("n", "<Esc-k>", ":m .-2<CR>==") -- move line down(n)
+vim.keymap.set("v", "<Esc-j>", ":m '>+1<CR>gv=gv") -- move line up(v)
+vim.keymap.set("v", "<Esc-k>", ":m '<-2<CR>gv=gv") -- move line down(v)
 
 -- neovim pane movement
 vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
@@ -67,9 +67,6 @@ local harpoon = require("harpoon")
 harpoon:setup()
 vim.keymap.set("n", "<leader>ha", function()
 	harpoon:list():add()
-end)
-vim.keymap.set("n", "<leader>ha", function()
-	harpoon:list():remove()
 end)
 vim.keymap.set("n", "<leader>hh", function()
 	harpoon.ui:toggle_quick_menu(harpoon:list())
